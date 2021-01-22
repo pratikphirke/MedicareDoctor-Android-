@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DashboardActivity"
+        android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+            <EditText
+                android:id="@+id/etaadhar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColorHint="@color/colorPrimary"
+                android:hint="Enter Aadhar Number "
+                android:inputType="number"/>
+    <Button
+        android:id="@+id/btninfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Patient Info"
+        android:textColorHint="@color/colorPrimary"
+        android:background="@drawable/bt_uisquare"
+        />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                android:id="@+id/imgscanQR">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/bt_uisquare"
+                        android:src="@drawable/scanqr"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="Scan QR"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                android:id="@+id/imgappoinment"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/bt_uisquare"
+                        android:src="@drawable/ic_local_hospital_black_24dp"
+                        android:padding="10dp"/>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="Appoinments"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>-->
+
+        <!--  <ImageView
+              android:background="@drawable/hospital"
+              android:layout_width="match_parent"
+              android:layout_height="220dp" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+          <LinearLayout
+              android:layout_weight="1"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="0dp">
+
+              <ImageView
+                  android:layout_width="60dp"
+                  android:layout_height="60dp"
+                  android:background="@color/colorPurpleT" />
+
+              <TextView
+                  android:id="@+id/emailid"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:textColor="@android:color/white"
+                  android:text="hii"/>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:textColor="@android:color/white"
+                  android:layout_marginTop="5dp"
+                  android:layout_height="wrap_content"
+                  android:text="hello"/>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:background="#3c84c2e5"
+              android:layout_weight="2"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_height="0dp"
+              >
+
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical">
+              <android.support.v7.widget.CardView
+                  android:layout_width="140dp"
+                  android:layout_height="140dp"
+                  android:layout_marginLeft="100dp"
+                  android:layout_marginRight="50dp">
+                  <ImageButton
+                      android:id="@+id/c1"
+                      android:layout_width="40dp"
+                      android:layout_height="40dp"
+                      android:layout_marginLeft="30dp"
+                      android:background="@android:color/white"
+                      android:src="@drawable/userprofile">
+                  </ImageButton>
+              </android.support.v7.widget.CardView>
+
+                  <android.support.v7.widget.CardView
+                      android:layout_width="140dp"
+                      android:layout_height="140dp"
+                      android:layout_marginTop="40dp">
+
+                  <ImageButton
+                      android:id="@+id/c3"
+                      android:layout_width="40dp"
+                      android:layout_height="40dp"
+                      android:background="@android:color/white"
+                      android:src="@drawable/history" />
+                  </android.support.v7.widget.CardView>
+              </LinearLayout>
+
+
+              <LinearLayout
+                  android:gravity="center_horizontal"
+                  android:layout_weight="1"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+                  <android.support.v7.widget.CardView
+                      android:layout_width="140dp"
+                      android:layout_height="140dp"
+                      android:layout_marginTop="180dp">
+
+                  <ImageButton
+                      android:id="@+id/c2"
+                      android:layout_width="40dp"
+                      android:layout_height="40dp"
+                      android:background="@android:color/white"
+                      android:src="@drawable/treatment" />
+                  </android.support.v7.widget.CardView>
+              </LinearLayout>
+
+          </LinearLayout>
+          </LinearLayout>-->
+    </LinearLayout>
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="#3c84c2e5"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                  <android.support.v7.widget.CardView
+                     android:layout_width="match_parent"
+                      android:background="@android:color/white"
+                     android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/imgscanQR"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:background="@android:color/white"
+                    android:src="@drawable/userprofile">
+                </ImageButton>
+                <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Scan QR"
+                    android:layout_gravity="center_vertical"/>
+
+                  </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp">
+                <ImageButton
+                    android:id="@+id/imgappoinment"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:background="@android:color/white"
+                    android:src="@drawable/treatment" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Appoinment"
+                    android:layout_gravity="center_vertical"/>
+
+            </android.support.v7.widget.CardView>
+               </LinearLayout>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/etaadhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Enter Aadhar Number "/>
+        <Button
+            android:id="@+id/btninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="250dp"
+            android:text="Get Patient Info"/>
+
+    </LinearLayout>-->
+<!--</RelativeLayout>-->

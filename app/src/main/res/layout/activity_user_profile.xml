@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserProfile">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Patient Profile"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent2"
+            android:layout_marginLeft="90dp"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <!-- <ImageView
+                android:id="@+id/imgprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/camera"
+                android:layout_marginLeft="200dp"/>-->
+            <TextView
+                android:text="Aadhar Number :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorPurple"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/qr"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="200dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="Name :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorPurple"
+
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/pname"
+                android:layout_width="wrap_content"
+                android:text="...."
+                android:textColor="@android:color/black"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:layout_marginLeft="200dp"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:text="Age :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="105dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorPurple"
+
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/page"
+                android:layout_width="wrap_content"
+                android:text="...."
+                android:textColor="@android:color/black"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:layout_marginLeft="200dp"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:text="Blood Group :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorPurple"
+
+                android:layout_marginLeft="50dp"
+
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/pbg"
+                android:layout_width="wrap_content"
+                android:text="...."
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="155dp"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

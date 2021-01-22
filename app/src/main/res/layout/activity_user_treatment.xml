@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserTreatment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/linear1"
+            android:orientation="vertical">
+            <ImageView android:src="@drawable/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Write Symptoms"
+                android:ems="10"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/symptom"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:id="@+id/symptom"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Disease"
+                android:ems="10"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/disease"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:ems="10"
+                android:inputType="text"
+                android:id="@+id/disease"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Medicines"
+                android:ems="10"
+                android:id="@+id/medicine"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/medicine"
+                />
+          <!--  <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:ems="10"
+                android:inputType="text"
+                />-->
+
+            <ImageButton
+                android:id="@+id/ivadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/medicine"
+                android:layout_alignRight="@+id/medicine"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="-40dp"
+                android:src="@drawable/addi" />
+
+            <TextView
+                android:id="@+id/tvcnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/medicine"
+                android:layout_alignRight="@+id/medicine"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="-40dp"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/btnsave"
+            android:layout_marginTop="45dp"
+            android:textSize="20dp"
+            android:text="SAVE"/>
+    </LinearLayout>
+</ScrollView>
